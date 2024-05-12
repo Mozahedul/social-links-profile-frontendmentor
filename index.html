@@ -38,7 +38,10 @@
         background-color: hsl(0, 0%, 12%);
         padding: 40px;
         border-radius: 15px;
-        margin: 0 15px;
+        margin: 0 30px;
+        max-width: 350px;
+        min-width: 250px;
+        height: auto;
       }
 
       .profile-img {
@@ -53,7 +56,7 @@
         border-radius: 100px;
       }
 
-      .container h2 {
+      .container h1 {
         color: hsl(0, 0%, 100%);
         text-transform: capitalize;
         letter-spacing: 0.01em;
@@ -61,7 +64,7 @@
         text-align: center;
       }
 
-      .container h4 {
+      .container h2 {
         color: hsl(75, 94%, 57%);
         text-transform: capitalize;
         margin-top: -12px;
@@ -71,7 +74,7 @@
         text-align: center;
       }
 
-      .container > .descr {
+      .container .descr {
         color: hsl(0, 0%, 100%);
         font-size: 14px;
         margin-top: 24px;
@@ -112,21 +115,25 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        margin-top: 15px;
+        color: orange;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(0, 0%, 92%);
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="profile-img">
-        <img src="./assets/images/avatar-jessica.jpeg" alt="" />
-      </div>
-      <h2>jessica randall</h2>
-      <h4>london, united kingdom</h4>
-      <p class="descr">Front-end developer and avid reader.</p>
-      <div class="social-links">
+      <header>
+        <div class="profile-img">
+          <img src="./assets/images/avatar-jessica.jpeg" alt="profile" />
+        </div>
+        <h1>jessica randall</h>
+        <h2>london, united kingdom</h2>
+        <p class="descr">Front-end developer and avid reader.</p>
+      </header>
+      <main class="social-links">
         <a href="https://github.com/Mozahedul" class="social-link-btn"
           >GitHub</a
         >
@@ -142,18 +149,18 @@
         <a href="https://github.com/Mozahedul" class="social-link-btn"
           >instagram</a
         >
-      </div>
+      </main>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://portfolio-mozahedul.vercel.app/"
+            >Mozahedul Islam</a>
+        </div>
+      </footer>
     </div>
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="#"
-        >Mozahedul Islam - A full-stack webdeveloper, experience in MERN stack,
-        JavaScript, Next.js, React.js MongoDB, Bootstrap, Tailwind CSS, Material
-        UI, git, and GitHub</a
-      >.
-    </div> -->
+    
   </body>
 </html>
